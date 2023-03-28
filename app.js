@@ -65,7 +65,7 @@ app.use('/swan', indexRouter);
 
 
 app.get('/action-test', async (req, res) => {
-  res.send('Hi Tharun Prakash');
+  res.send('Hi Tharun Prakash Success');
 });
 
 app.use((req, res, next) => {
