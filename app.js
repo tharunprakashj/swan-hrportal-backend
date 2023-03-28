@@ -63,6 +63,11 @@ app.use(cookieParser());
 // ANCHOR setting app end point as myswan
 app.use('/swan', indexRouter);
 
+
+app.get('/action-test', async (req, res) => {
+  res.send('Hi Tharun');
+});
+
 app.use((req, res, next) => {
   const err = new Error('Not Found');
   new Response(
