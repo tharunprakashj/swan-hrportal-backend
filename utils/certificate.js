@@ -1,0 +1,16 @@
+const ceritificate = {
+  BIRTH_CERTIFICATE: 1,
+  NATIONAL_IDENTITY_CARD: 2,
+  PASSPORT: 3,
+  CIVIL_MARRIAGE_CERTIFICATE: 4,
+  WRITTEN_PROOF: 5,
+  DISABILITY_MEDICAL_REPORT: 6,
+  ADOPTION_PAPER: 7,
+  PROOF_OF_ADDRESS: 8,
+  PAY_ROLL: 9,
+  XRAY_SCAN: 10,
+};
+
+module.exports = {
+  ceritificate,
+};

@@ -1,0 +1,80 @@
+const Role = {
+  GROUP_HR: 1,
+  SUB_HR: 2,
+  HR_EXECUTIVE: 3,
+  EMPLOYEE: 4,
+  SWAN_ADMIN: 5,
+  // ALL_USERS: ["ADMIN_USER", "SYSTEM_ADMIN", "TABLET_USER", "CONTACT_USER"]
+};
+
+const requestStatus = {
+  PENDING: 1,
+  HR_APPROVAL: 2,
+  SWAN_APPROVAL: 3,
+  HEALTH_ADMIN: 4,
+  HEALTH_UW: 5,
+  HEALTH_PROCESSOR: 6,
+  BACK_TO_HR: 7,
+  APPROVED: 8,
+  REJECTED: 9,
+  BACK_TO_EMPLOYEE: 10,
+};
+
+const documentType = {
+  BIRTH_CERTIFICATE: 1,
+  NATIONAL_IDENTITY_CARD: 2,
+  PASSPORT: 3,
+  CIVIL_MARRIAGE_CERTIFICATE: 4,
+  WRITTEN_PROOF: 5,
+  DISABILITY_MEDICAL_REPORT: 6,
+  ADOPTION_PAPER: 7,
+  PROOF_OF_ADDRESS: 8,
+  PAY_ROLL: 9,
+  XRAY_SCAN: 10,
+  PRIMARY: [1, 9],
+  SPOUSE: [1, 4],
+  LIVE_IN_PARTNER: [8],
+  CHILD: [1],
+  TERTIARY_STUDENT: [1, 5],
+  PARENT: [1],
+};
+
+const requestType = {
+  ADD_MEMBER: 1,
+  ADD_DEPENDANT: 2,
+  DELETE_MEMBER: 3,
+  DELETE_DEPENDANT: 4,
+  CHANGE_PLAN: 5,
+  CHANGE_MEMBER: 6,
+  TRANSFER_MEMBER: 7,
+  CHANGE_SALARY_BAND: 8,
+  CHANGE_TOP_UP: 9,
+};
+
+const userStatus = {
+  PENDING: 'PENDING',
+  ACTIVE: 'ACTIVE',
+  INACTIVE: 'INACTIVE',
+  REJECTED: 'REJECTED',
+  DELETED: 'DELETED',
+  DECEASED: 'DECEASED',
+};
+
+const userRelationship = {
+  PRIMARY: 'PRIMARY',
+  SPOUSE: 'SPOUSE',
+  LIVE_IN_PARTNER: 'LIVE_IN_PARTNER',
+  CHILD: 'CHILD',
+  TERTIARY_STUDENT: 'TERTIARY_STUDENT',
+  PARENT: 'PARENT',
+};
+
+const insuranceStatus = {
+  INACTIVE: 'NOT ACTIVE',
+  ACTIVE: 'ACTIVE',
+  EXPIRED: 'EXPIRED',
+};
+
+module.exports = {
+  Role, requestStatus, documentType, requestType, userStatus, userRelationship, insuranceStatus,
+};

@@ -1,0 +1,47 @@
+{
+  "development": {
+    "username": "sa",
+    "password": "Skein@123",
+    "database": "myswan_rgpa_core_4",
+    "host": "demo.emeetify.com",
+    "dialect": "mssql",
+    "dialectOptions": {
+      "options": {
+          "enableArithAbort": false,
+          "cryptoCredentialsDetails": {
+              "minVersion": "TLSv1"
+          }
+      }
+  }
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mssql",
+    "dialectOptions": {
+      "options": {
+          "enableArithAbort": false,
+          "cryptoCredentialsDetails": {
+              "minVersion": "TLSv1"
+          }
+      }
+  }
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mssql",
+    "dialectOptions": {
+      "options": {
+          "enableArithAbort": false,
+          "cryptoCredentialsDetails": {
+              "minVersion": "TLSv1"
+          }
+      }
+  }
+  }
+}
